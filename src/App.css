@@ -1,0 +1,68 @@
+input {
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-sidebar-avatar {
+  margin-top: 20px;
+  width: 160px;
+}
+
+.App-sidebar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-sidebar-footer {
+  margin-bottom: 20px;
+}
+
+.App-sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #b8b8b8;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-main {
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 830px) {
+  .App-sidebar-avatar {
+    margin-top: 10px;
+    width: 80px;
+  }
+  .App-sidebar {
+    width: 100px;
+  }
+  .App-main {
+    margin-left: 100px;
+  }
+}
